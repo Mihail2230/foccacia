@@ -1,0 +1,78 @@
+GET http://localhost:9000/api/teams?name=Barcelona
+
+###
+
+GET 
+
+###
+
+GET http://localhost:9000/api/teams?season=2020&leagueId=13
+
+###
+
+GET http://localhost:9000/api/leagues/529
+
+###
+
+GET http://localhost:9000/api/leagues?season=2020
+
+###
+
+GET http://localhost:9000/api/leagues/212
+
+###
+
+POST http://localhost:9000/api/groups
+Authorization: 8c5e3414-3516-42d6-9d31-8a3864b7ca99
+Content-Type: application/json
+
+{
+    "name": "Grupo 01",
+    "description": "As melhores equipas da Europa"
+}
+
+###
+
+GET http://localhost:9000/api/groups
+Authorization: 8c5e3414-3516-42d6-9d31-8a3864b7ca99
+
+###
+
+GET http://localhost:9000/api/groups/Xk8hN5QB1X1_JsaTu2UY
+Authorization: 40e483f0-2c68-45fe-9c56-3a5d2f007a89
+
+###
+
+DELETE http://localhost:9000/api/groups/Xk8hN5QB1X1_JsaTu2UY
+Authorization: 40e483f0-2c68-45fe-9c56-3a5d2f007a89
+
+###
+
+PUT http://localhost:9000/api/groups/Xk8hN5QB1X1_JsaTu2UY
+Authorization: 40e483f0-2c68-45fe-9c56-3a5d2f007a89
+Content-Type: application/json
+
+{
+    "name": "Group edit test",
+    "description": "edited description"
+}
+
+###
+
+POST http://localhost:9000/api/users
+Content-Type: application/json
+
+{
+    "username" : "Antunes",
+    "password": "teste"
+}
+
+###
+
+PUT http://localhost:9000/api/groups/Xk8hN5QB1X1_JsaTu2UY/teams/529/league/140/season/2021
+Authorization: a428a3c1-59fc-4ffa-a91e-1c7719813f2c
+
+###
+
+DELETE http://localhost:9000/api/groups/Xk8hN5QB1X1_JsaTu2UY/teams/529/league/140/season/2021
+Authorization: 40e483f0-2c68-45fe-9c56-3a5d2f007a89
